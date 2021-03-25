@@ -21,7 +21,7 @@ public static void main(String[] args) {
 		System.out.println("Digite o terceiro valor: ");
 		n3=leia.nextInt();
 		
-		if (n1>n2 && n2>n3 && n1>n3) {
+		if (n1<=n2 && n2<=n3 && n1<=n3) {
 			resultado[0]=n1;
 			resultado[1]=n2;
 			resultado[2]=n3;
@@ -31,7 +31,7 @@ public static void main(String[] args) {
 			}
 			
 		}
-		else if(n1>n2 && n3>n2 && n1>n3) {
+		else if(n1<=n2 && n3<=n2 && n1<=n3) {
 			resultado[0]=n1;
 			resultado[1]=n3;
 			resultado[2]=n2;
@@ -42,7 +42,7 @@ public static void main(String[] args) {
 			
 			
 		}
-		else if(n2>n1 && n1>n3 && n2>n3) {
+		else if(n2<=n1 && n1<=n3 && n2<=n3) {
 			resultado[0]=n2;
 			resultado[1]=n1;
 			resultado[2]=n3;
@@ -53,7 +53,7 @@ public static void main(String[] args) {
 			
 			
 		}
-		else if(n2>n1 && n3>n1 && n2>n3) {
+		else if(n2<=n1 && n3<=n1 && n2<=n3) {
 			resultado[0]=n2;
 			resultado[1]=n3;
 			resultado[2]=n1;
@@ -64,7 +64,7 @@ public static void main(String[] args) {
 			
 			
 		}
-		else if(n3>n1 && n2>n1 && n3>n2) {
+		else if(n3<=n1 && n2<=n1 && n3<=n2) {
 			resultado[0]=n3;
 			resultado[1]=n2;
 			resultado[2]=n1;
@@ -74,7 +74,7 @@ public static void main(String[] args) {
 			}
 			
 		}
-		else if(n3>n1 && n1>n2 && n3>n2) {
+		else if(n3<=n1 && n1<=n2 && n3<=n2) {
 			resultado[0]=n3;
 			resultado[1]=n1;
 			resultado[2]=n2;
@@ -84,10 +84,6 @@ public static void main(String[] args) {
 			}
 			
 		}
-		else {
-			System.out.println("Há numeros iguais");
-		}
-		
 		
 	}
 	
