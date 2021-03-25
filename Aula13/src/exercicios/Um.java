@@ -19,21 +19,21 @@ public class Um {
 		System.out.println("Digite o terceiro valor: ");
 		n3=leia.nextInt();
 		
-		if(n1>n2 && n1>n3)
+		if(n1>=n2 && n1>=n3)
 		{
-			System.out.printf("O maior valor é "+ n1);
+			System.out.printf("O maior valor Ã© "+ n1);
 		}
-		else if(n2>n1 && n2>n3 ) 
+		else if(n2>=n1 && n2>=n3 ) 
 		{
-			System.out.println("O maior valor é  "+ n2);
+			System.out.println("O maior valor Ã©  "+ n2);
 		}
-		else if(n3>n1 && n3>n2 ) 
+		else if(n3>=n1 && n3>=n2 ) 
 		{
-			System.out.printf("O maior valor é "+n3);
+			System.out.printf("O maior valor Ã© "+n3);
 		}
 		else 
 		{
-			System.out.printf("Há dois ou mais números iguais");
+			System.out.printf("HÃ¡ dois ou mais nÃºmeros iguais");
 		}
 
 	}
