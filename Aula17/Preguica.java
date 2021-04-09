@@ -1,5 +1,5 @@
 
-public class Preguica extends Animal {
+public class Preguica extends Animal implements Habitos {
 	
 	private String comer;
 	
@@ -8,12 +8,20 @@ public class Preguica extends Animal {
 		this.comer=comer;
 	}
 	
-	
-	public String EmitirSom() {
-		return "ZZZZZZZZZZZZZZZZ";
+	@Override
+	public void subirEmArvore() {
+		System.out.println("Tó subindo, mas perai que bateu uma preguiçaaaaaaaaaa");		
 	}
-	
-	public String subriEmArvore() {
-		return "to subindo, mas perai que bateu uma preguiça";
+
+
+	@Override
+	public void Correr() {
+		System.out.println("Não fazemos isso aqui");
+	}
+
+
+	@Override
+	public void EmitirSom() {
+		System.out.println("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ");
 	}
 }

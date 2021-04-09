@@ -5,13 +5,15 @@ public class Cavalo extends Animal {
 		super(nome,idade);
 	}
 	
-	
-	public String Correr() {
-		return "Estou correndo";
+	@Override
+	public void Correr() {
+		System.out.println("Cavalgando");
 	}
 	
-	public String Som() {
-		return "Riiiiiii";
+	@Override
+	public void EmitirSom() {
+		System.out.println("Riiiiiiiiiiiii");
 	}
+
 	
 }

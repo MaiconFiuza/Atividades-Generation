@@ -7,14 +7,19 @@ public class Cachorro extends Animal {
 		super(nome,idade);
 		this.comer=comer;
 	}
-	
-	
-	public String Latir() {
-		return "AU AU AU AU AU";
+
+	@Override
+	public void Correr() {
+		System.out.println("Estou correndo");
+	}
+
+	@Override
+	public void EmitirSom() {
+		System.out.println("AU AU AU AU ");
 	}
 	
-	public String Correr() {
-		return "Cachorro está correndo";
-	}
+	
+	
+	
 	
 }
