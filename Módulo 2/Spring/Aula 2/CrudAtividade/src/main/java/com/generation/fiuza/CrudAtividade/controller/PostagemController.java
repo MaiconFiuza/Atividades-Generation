@@ -18,8 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.generation.fiuza.CrudAtividade.model.Postagem;
 import com.generation.fiuza.CrudAtividade.repository.PostagemRepository;
 
-
-
 @RestController
 @RequestMapping("/postagens")
 @CrossOrigin("*")
