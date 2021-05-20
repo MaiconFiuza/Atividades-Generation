@@ -5,44 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--primeira tag utilizada para responsividade-->
     <title>Podcast</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<!--
+    <style>
+        UTILIZANDO POR TAG
+        p{
+            font-size: 30px;
+        }
+
+        UTILIZANDO POR ID
+        #p1{
+            font-size:60px;
+        }
+
+        UTILIZANDO POR CLASSE
+        .p1{
+            font-size:9px;
+            text-align:center;
+        }
+    </style>
+-->
 </head>
 <body>
     
-    <ul>
+    <ul id="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="">Gatos Abusivos</a></li>
+        <li><a href="">Episódios Icônicos</a></li>
+        <li><a href="contato.html">Contatos</a></li>
     </ul>
 
-    <h1>Podcasts Brasileiros</h1>
-    <p>
-        Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non 
-        tellus tristique interdum. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. 
-        Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! In elementis mé pra quem é 
-        amistosis quis leo.
-    </p>
+    <h1 class="center">Diário de Bordo</h1>
+    <div class="container">
+
+        <div>
+            <img class="br-50 wh-300 p-30" src="assets/img/2_temporada.jpg" alt="o casal mais iconico do brasil lado a lado, jeska greco e Leandro Neko" >
+        </div>   
+
+
+        <div class="p-30">
+            <p class="justify"><!-- id="p1" é como fazemos por id  
+                    class="p1" é como fazemos por classe
+                    <p style="font-size: 16px;"> forma inline de se fazer o css 
+                -->
+                Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non 
+                tellus tristique interdum. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. 
+                Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! In elementis mé pra quem é 
+                amistosis quis leo.
+            </p>
     
-    <p>
-        Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Aenean aliquam molestie leo, vitae iaculis 
-        nisl. Paisis, filhis, espiritis santis. Diuretics paradis num copo é motivis de denguis.
-    </p> 
+            <p class="center">
+                Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Aenean aliquam molestie leo, vitae iaculis 
+                nisl. Paisis, filhis, espiritis santis. Diuretics paradis num copo é motivis de denguis.
+            </p> 
+        </div>
 
-    <p>
-        Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de capivaris, leite de mula manquis sem cabeça. Manduma pindureta quium dia nois paga. Atirei o pau no gatis, per gatis num morreus.
-        Detraxit consequat et quo num tendi nada. Cevadis im ampola pa arma uma pindureta. Casamentiss faiz malandris se pirulitá. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
-    </p>
+        
+        
+    </div> 
 
-    <img src="assets/img/microfone.jpg" alt="Imagem de um microfone com o fundo rosa" >
+    <h2 class="center">Videos</h2>
 
-    <h2>Videos</h2>
+    <div class="container mb-50">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/O70faaRrCpw" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href=""></a>
+            <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do LinkdIn">
+        </div>
 
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/i7rXjz5bkVU" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
+        <p class="center">
+            Fã Site Diário de Bordo - Criado por Maicon Fiuza vulgo fifiuza
+        </p>
+    </footer>
 
 </body>
 </html>
