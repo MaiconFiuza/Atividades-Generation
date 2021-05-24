@@ -1,115 +1,441 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Diário de Bordo</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  </head>
-  <body>
+  <style>
+    .tm-social {
+      width: 50px;
+      height: 50px;
+    }
 
-    <!--MENU inicio -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style= "background-color: #84d471;">
-        <a class="navbar-brand" href="#">
-            <img src="asserts/img/mic-.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            DIÁRIO DE BORDO
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <!--<li class="nav-item active">
+    .rodape{
+      background-color: #343a40;
+        color: white;
+    }
+
+  </style>
+
+
+  <title>Diário de Bordo</title>
+
+</head>
+
+<body>
+
+  <!--MENU inicio -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="asserts/img/mic-.png" width="30" height="30" class="d-inline-block align-top"
+        alt="Logo de um microfone">
+      DIÁRIO DE BORDO
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!--<li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
             </li> 
                 dar uma olha nesta parte para estudar melhor depois
             -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gatos Abusivos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Episódios Icônicos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contatos</a>
-              </li>
-          </ul>
-          
-        </div>
-      
-    <!--MENU fim-->
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gatos">Gatos Abusivos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#iconico">Episódios Icônicos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contatos">Contatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#fifi">Mandar a Fofoca para as fifi</a>
+        </li>
+      </ul>
 
-    <!--CARROUSEL inicio-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="asserts/img/carrosel-1.png" alt="Jeska Grecco e Leandro Neko Sorrindo com os dizeres bem-vindo">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="asserts/img/carrosel-2.png" alt="Segundo Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="asserts/img/carrosel-1.png" alt="Terceiro Slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-        </a>
+    </div>
+  </nav>
+  <!--MENU fim-->
+
+  <!--CARROUSEL inicio-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="asserts/img/carrosel-1.png"
+          alt="Jeska Grecco e Leandro Neko Sorrindo com os dizeres bem-vindo">
       </div>
-     <!--CARROUSEL fim--> 
-
-    <!--JUMBOTRON inicio-->
-     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
-        </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="asserts/img/jeska-1.png" alt="Segundo Slide">
       </div>
-     <!--JUMBOTRON fim-->
+      <div class="carousel-item">
+        <img class="d-block w-100" src="asserts/img/neko1.png" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <!--CARROUSEL fim-->
+
+  <!--JUMBOTRON inicio-->
+  <div id="sobre" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Sobre</h1>
+      <p class="lead">Nesse podcast diário, Jeska Grecco e Leandro Neko relatam a vivência de um casal convivendo
+        24horas por dia.</p>
+    </div>
+  </div>
+  <!--JUMBOTRON fim-->
+
+  <!--Gatos Abusivos CARD inicio-->
+  <div id="gatos" class="container">
+    <h1 class="display-4">Gatos abusivos por Jeska Grecco</h1>
+    <hr>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="asserts/img/zooey.png" alt="Gatinha preta com um laço no vermelho no pescoço">
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <h5 class="card-title">👀ZOOEY</h5>
+            <p><i>"a lenda low profile. É só apontar uma câmera - ou os braços - que ela sai correndo fugida da gente
+                kkkk.
+                Adotei junto com o Pudi, super quietinha e inimiga do carinho, gosta de atenção moderada apenas na hora
+                que ela
+                decidir que é uma boa hora de carinho. Ama carinho no tapete da cozinha, odeia colo mais que tudo nessa
+                vida."</i></p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Grecco ,<cite title="Título da fonte">Jeska</cite>
+              </small>
+            </footer>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="asserts/img/pudim.png"
+          alt="Gatinha branca e preta com os olhos azulados com um laço no vermelho no pescoço">
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <h5 class="card-title">🍮PUDIM</h5>
+            <p><i>"adotei ele em 2014, bem filhote, logo depois que a Arya perdeu o irmãozinho e ficou mega carente, rs.
+                Chegou tímido e muito assustado, como continua até hoje, mas agora muito carinhoso e falante também. Ama
+                carinho, odeia colo."</i></p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Grecco ,<cite title="Título da fonte">Jeska</cite>
+              </small>
+            </footer>
+        </div>
+
+      </div>
 
 
-    <!--GRID-->
-        <div class="container">
-            
-            <div class="row mt-3 d-flex justify-content-center">  <!--Linha-->
-                <div class="col-md-12 p-0"> <!--coluna-->
-                    <div class="bg-dark">12Colunas</div>
-                </div>
-            </div>                 
-            
-            <div class="row mt-3 d-flex justify-content-center">  <!--Linha-->
-                <div class="col-md-6 p-0"> <!--coluna-->
-                    <div class="bg-dark">6Colunas</div>
-                </div>
-                <div class="col-md-6 p-0"> <!--coluna-->
-                    <div class="bg-danger">6Colunas</div>
-                </div>
-                
-            </div>        
 
-        </div>  
-    <!--GRID-->
 
-      
+      <div class="card">
+        <img class="card-img-top" src="asserts/img/arya.png"
+          alt="Gatinha branca e preta com os olhos verdes com um laço no vermelho no pescoço">
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <h5 class="card-title">😻ARYA</h5>
+            <p><i>"adotei ela em 2013 junto com o irmãozinho Lannister, que faleceu de PIF um ano depois :( Ela ficou
+                super carente e resolvi adotar
+                Zooey e Pudi juntos pois sempre tive vontade de ter três gatos e ela precisava de mais gatos para ser
+                menos abusiva comigo -
+                se você acompanha meus stories sabe que esse plano não deu muito certo, rs, e ainda ganhei olhares
+                fuzilantes por ter colocado outros
+                dois gatos no castelo da donzela. Ama carinho e viveria no colo se pudesse."</i></p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Grecco ,<cite title="Título da fonte">Jeska</cite>
+              </small>
+            </footer>
+        </div>
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+      </div>
+
+    </div>
+
+    <!--Gatos Abusivos CARD fim-->
+
+    <!--CARD inicio-->
+    <div id="iconico" class="container">
+      <hr>
+      <h1 class="display-4">Episódios Icônicos</h1>
+      <hr>
+      <div class="card-columns">
+        <div class="card">
+          <!--<img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">-->
+          <div class="card-body">
+            <h5 class="card-title">#01 - DIÁRIO DE BORDO - Coronavírus e clube de caminhada</h5>
+            <p class="card-text">
+              Nesse episódio, @jeskagrecco e @leandroneko contam o início da experiência de convívio,
+              home office e a expectativa sobre o futuro do trabalho.
+            </p>
+            <a
+              href="https://anchor.fm/diario-de-bordo1/episodes/01---DIRIO-DE-BORDO---Coronavrus-e-clube-de-caminhada-ebjoc0">OUVIR</a>
+          </div>
+        </div>
+        <div class="card p-3">
+          <h5 class="card-title">#20 - DIÁRIO DE BORDO - Gírias Gaúchas Tri Afudê</h5>
+          <p class="card-text">
+            Nesse episódio, Leandro Neko relembra as raízes gaúchas com a Jeska Grecco
+            e falam sobre as gírias e costumes do país Porto Alegre.
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/20---DIRIO-DE-BORDO---Grias-Gachas-Tri-Afud-ecdlmj">OUVIR</a>
+        </div>
+
+        <div class="card p-3">
+          <h5 class="card-title">#33 - DIÁRIO DE BORDO - Sexta de #quarentEMO e a briga de Luis e Vanessa</h5>
+          <p class="card-text">
+            Nesse episódio, Jeska Grecco e Leandro Neko contam como foi a noite de #quarentEMO deles, também
+            conhecida como a live da Fresno no YouTube, e discutem sobre a vida dos vizinhos, é claro
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/33---DIRIO-DE-BORDO---Sexta-de-quarentEMO-e-a-briga-de-Luis-e-Vanessa-ecuogd">OUVIR</a>
+        </div>
+
+        <div class="card p-3">
+          <h5 class="card-title">#100 - DIÁRIO DE BORDO - Especial 100 dias em casa</h5>
+          <p class="card-text">
+            Nesse episódio, @jeskagrecco e @leandroneko comemoram (??) 100 episódios do programa com participação
+            especial dos amigos Deborista, Gus Lanzetta, Pathy dos Reis, Carol Moreira, Mabê, Filipe Bortolotto,
+            Tchulim, Foquinha e André Brandt.
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/100---DIRIO-DE-BORDO---Especial-100-dias-em-casa-efrvo6">OUVIR</a>
+        </div>
+
+        <div class="card p-3">
+          <h5 class="card-title">#133 - DIÁRIO DE BORDO - Os Avengers da academia e os perrengues no ônibus</h5>
+          <p class="card-text">
+            Nesse episódio, @jeskagrecco e @leandroneko contam as coisas que mais irritam na academia
+            e os perrengues no ônibus.
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/133---Os-Avengers-da-academia-e-os-perrengues-no-nibus-eha5m7">OUVIR</a>
+        </div>
+
+        <div class="card p-3">
+          <h5 class="card-title">#200 - DIÁRIO DE BORDO - Especial 200 dias em casa</h5>
+          <p class="card-text">
+            Nesse episódio, @jeskagrecco e @leandroneko “comemoram” o programa de número 200 com áudios dos amigos
+            contando
+            histórias desesperadas com José Melo, Julião Pacheco, Samir Duarte, Alice Aquino e Ape além de histórias
+            mais que
+            especiais dos pais dos apresentadores. Valeu por estarem com a gente até aqui!
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/200---DIRIO-DE-BORDO---Especial-200-dias-em-casa-ekges6">OUVIR</a>
+        </div>
+
+        <div class="card p-3">
+          <h5 class="card-title">#300 - DIÁRIO DE BORDO - 300 dias com vocês</h5>
+          <p class="card-text">
+            Nesse episódio, @jeskagrecco e @leandroneko comemoram o marco de 300 episódios de programas com participação
+            dos
+            ouvintes icônicos! Prepara o lencinho e vem! Obrigada por estarem com a gente
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/300---DIRIO-DE-BORDO---300-dias-com-vocs-eopf55">OUVIR</a>
+        </div>
+
+        <div class="card p-3">
+          <h5 class="card-title">#365 - DIÁRIO DE BORDO - Completamos 365 dias em casa</h5>
+          <p class="card-text">
+            Nesse episódio, @jeskagrecco e @leandroneko chegam ao marco de 365 programas ininterruptos e falam sobre a
+            jornada que foi
+            chegar até aqui. Obrigada por nos acompanharem nesse ano tão difícil! SEMPRE NÓS
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/365---DIRIO-DE-BORDO---Completamos-365-dias-em-casa-esncu1">OUVIR</a>
+        </div>
+
+        <div class="card p-3">
+          <h5 class="card-title">#36 - DIÁRIO DE BORDO - 2 TEMPORADA - Faca na calcinha e rola na testa: o retorno de
+            Juds</h5>
+          <p class="card-text">
+            Sim, ele voltou! O mais amado e temido de todos: JUDS, o ícone de histórias absurdas desse podcast
+            com aventuras ainda mais icônicas!
+          </p>
+          <a
+            href="https://anchor.fm/diario-de-bordo1/episodes/36---Faca-na-calcinha-e-rola-na-testa-o-retorno-de-Juds-e10eaj8">OUVIR</a>
+        </div>
+
+      </div>
+      <!--Card fim-->
+
+
+      <!--GRID-->
+      <div id="contatos" class="row mt-5 mb-5">
+        <!--Linha-->
+        <div class="col-md-12 p-0">
+          <h1 class="display-4">Outras redes e Contatos</h1>
+          <hr>
+
+          <h3 class="display-5">Diário de bordo</h3>
+
+          <img src="asserts/img/spotify.png" alt="icone do spotify">
+          <a href="https://open.spotify.com/show/56jz3rLtCaKEBfPmxZkT8E">Spotify</a>
+
+          <img src="asserts/img/instagram.png" alt="icone do instagram">
+          <a href="https://open.spotify.com/artist/3ua1eq39LuIGSTGNSqZpOy">instagram</a>
+
+          <img src="asserts/img/picpay.png" alt="icone do picpay">
+          <a href="http://picpay.me/diariodebordo">PicPay</a>
+
+          <img src="asserts/img/padrim.png" alt="icone do padrim">
+          <a href="https://www.padrim.com.br/diariodebordo">Padrim</a>
+
+        </div>
+
+        <div class="col-md-6 p-0">
+          <!--coluna-->
+          <p>
+          <h5>Neko</h5>
+          </p>
+
+          <img src="asserts/img/instagram.png" alt="icone do instagram">
+          <a href="https://www.instagram.com/leandroneko/">instagram</a>
+
+
+          <img src="asserts/img/spotify.png" alt="icone do spotify">
+          <a href="https://open.spotify.com/artist/3ua1eq39LuIGSTGNSqZpOy">Spotify</a>
+
+          <img src="asserts/img/twitter.png" alt="icone do twitter">
+          <a href="https://twitter.com/leandroneko">twitter</a>
+
+          <p>
+          <h5>Jeska</h5>
+          </p>
+
+          <img src="asserts/img/instagram.png" alt="icone do instagram">
+          <a href="https://www.instagram.com/jeskagrecco/">instagram</a>
+
+
+          <img src="asserts/img/twitter.png" alt="icone do twitter">
+          <a href="https://twitter.com/jeskagrecco">twitter</a>
+
+        </div>
+
+        <div class="col-md-6 p-0">
+          <!--coluna-->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PK8mrTPzAV8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--GRID final-->
+
+      <hr>
+      <!--GRID-->
+      <div id="fifi" class="row mt-5 mb-5 center">
+        <!--Linha-->
+        <div class="col-md-12 p-0">
+          <h1 class="center">Menina eu nem te conto... </h1>
+          <h5>emailiconico@gmail.com</h5>
+          <div class="container mb-50">
+
+            <div>
+              <form>
+
+                <label for="nome">Título do email</label><br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome'></div>
+                <br>
+
+                <label for="email">Seu email</label><br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
+                <br>
+
+                <label for="assunto">O babado</label><br>
+                <textarea name="assunto" id="assunto" cols="100" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
+                <br>
+
+                <button onclick="enviar()">Enviar</button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+      </div>
+        <!--GRID-->
+
+        <footer class="rodape">
+
+          <div class="row mb-3">
+            <div class="col-md d-flex justify-content-center">
+              
+              <a href="www.linkedin.com/in/maicon-fiuza" class="p-3"
+                target="_blank">
+                <img class="tm-social " src="asserts/img/linkedin.png" alt="Logo do LinkdIn">
+              </a>
+
+              <a href="https://github.com/MaiconFiuza" class="p-3"
+                target="_blank">
+                <img class="tm-social " src="asserts/img/logotipo-do-github.png" alt="Logo do github">
+              </a>
+
+              <a href="https://www.instagram.com/fiuza.maicon/" class="p-3"
+                target="_blank">
+                <img class="tm-social " src="asserts/img/instagram.png" alt="Logo do instagram">
+              </a>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">
+                Fã site do Diário de Bordo - Criado por Fifiuza(Formalmente conhecido como Maicon Fiuza) &copy (sem fins comerciais)
+              </p>
+            </div>
+          </div>
+        </footer>
+
+        <script src="asserts/js/script.js"></script>
+
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+
+</body>
+
 </html>
