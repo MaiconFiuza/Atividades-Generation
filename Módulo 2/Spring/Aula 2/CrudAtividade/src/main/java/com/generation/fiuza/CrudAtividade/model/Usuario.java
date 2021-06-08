@@ -1,12 +1,18 @@
 package com.generation.fiuza.CrudAtividade.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "tb_usuario")
@@ -27,6 +33,16 @@ public class Usuario {
 	@NotNull
 	@Size(min = 6,max = 100)
 	private String senha;
+	
+	private String fotos;
+	
+	private String tipos;
+	
+	
+	@OneToMany(mappedBy ="usuario",cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("usuario")
+	private List<Postagem> postagem;
+	
 
 	public Long getId() {
 		return id;
@@ -59,6 +75,31 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
+	public String getFotos() {
+		return fotos;
+	}
+
+	public void setFotos(String fotos) {
+		this.fotos = fotos;
+	}
+
+	public String getTipos() {
+		return tipos;
+	}
+
+	public void setTipos(String tipos) {
+		this.tipos = tipos;
+	}
+
+	public List<Postagem> getPostagem() {
+		return postagem;
+	}
+
+	public void setPostagem(List<Postagem> postagem) {
+		this.postagem = postagem;
+	}
+	
 	
 	
 	
